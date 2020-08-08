@@ -2,6 +2,8 @@ wrightMap <-
 function(thetas, thresholds = NULL, item.side = itemModern, person.side = personHist,  main.title = "Wright Map", min.logit.pad = 0.25, max.logit.pad = 0.25, min.l = NULL, max.l = NULL, item.prop = 0.8, return.thresholds = TRUE, new.quartz = FALSE, use.hist = NULL,...) {
 
 	## Helper Functions
+	
+	message ("WrightMap 1.2.3 modified for use with Winsteps by Mike Linacre - Thank you, David Torres Irribarra and Rebecca Freund.")
 
 
 	if(is.null(thresholds))
