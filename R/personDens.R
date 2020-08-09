@@ -16,10 +16,11 @@ function(thetas, yRange = NULL, dim.lab.cex = 0.6, dim.lab.side = 3, dim.lab.adj
 
 		return(distInfo)
 	}
-     #   message("a")
+        message("a")
 	person.plot <- function(distInfo, yRange, xRange, p.points, p.range, p.col, r.col, dim.lab.side, dim.lab.cex, dim.lab.adj, p.cex.lab, p.font.lab, p.lwd, cex) {
+	message("a2")	
 		par(mar = c(op$mar[1], 0.2, op$mar[3], 0.1))
-    #    message("b")		
+        message("b")		
 		plot(distInfo, ylim = yRange, xlim = xRange, type = "l", axes = FALSE, ylab = "", xlab = "", cex.lab = p.cex.lab, font.lab = p.font.lab, lwd = p.lwd, col = attr(distInfo, "dim.color"))
      #   message("c")		
 		if(screen() == first)
