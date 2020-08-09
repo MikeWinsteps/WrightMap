@@ -21,7 +21,7 @@ function(thetas, yRange = NULL, dim.lab.cex = 0.6, dim.lab.side = 3, dim.lab.adj
 		par(mar = c(op$mar[1], 0.2, op$mar[3], 0.1))
         message("b")		
 		plot(distInfo, ylim = yRange, xlim = xRange, type = "l", axes = FALSE, ylab = "", xlab = "", cex.lab = p.cex.lab, font.lab = p.font.lab, lwd = p.lwd, col = attr(distInfo, "dim.color"))
-        message("c)		
+        message("c")		
 		if(screen() == first)
 			mtext(axis.persons, side = 2, line = 1, cex = 0.8, font = 3)
 		mtext(attr(distInfo, "dim.name"), side = dim.lab.side, line = -1, cex = dim.lab.cex, font = 1, adj = dim.lab.adj)
