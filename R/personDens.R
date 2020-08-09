@@ -16,17 +16,17 @@ function(thetas, yRange = NULL, dim.lab.cex = 0.6, dim.lab.side = 3, dim.lab.adj
 
 		return(distInfo)
 	}
-        message("a")
+     #   message("a")
 	person.plot <- function(distInfo, yRange, xRange, p.points, p.range, p.col, r.col, dim.lab.side, dim.lab.cex, dim.lab.adj, p.cex.lab, p.font.lab, p.lwd, cex) {
 		par(mar = c(op$mar[1], 0.2, op$mar[3], 0.1))
-        message("b")		
+    #    message("b")		
 		plot(distInfo, ylim = yRange, xlim = xRange, type = "l", axes = FALSE, ylab = "", xlab = "", cex.lab = p.cex.lab, font.lab = p.font.lab, lwd = p.lwd, col = attr(distInfo, "dim.color"))
-        message("c")		
+     #   message("c")		
 		if(screen() == first)
 			mtext(axis.persons, side = 2, line = 1, cex = 0.8, font = 3)
 		mtext(attr(distInfo, "dim.name"), side = dim.lab.side, line = -1, cex = dim.lab.cex, font = 1, adj = dim.lab.adj)
 		box(bty = "c")
-	        message("d")	
+	  #      message("d")	
 		draw.range <- function(upper, lower, col) {
 				
 				points( c( 0,0), c(lower, upper), type = "l", lwd = 5, lend=2, col = col)
