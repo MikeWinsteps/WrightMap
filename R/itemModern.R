@@ -58,7 +58,7 @@ function(thr, yRange = NULL, axis.items = "Items", show.thr.sym = TRUE, thr.sym.
 
 		}
 
-		apply(vertLines.data, 1, vertLines.draw, col = "grey90")	
+		apply(vertLines.data, 1, vertLines.draw, col = "grey80")	
 
 
 	}
