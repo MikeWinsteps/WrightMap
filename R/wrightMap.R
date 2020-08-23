@@ -3,7 +3,7 @@ function(thetas, thresholds = NULL, item.side = itemModern, person.side = person
 
 	## Helper Functions
 	
-	message ("WrightMap 1.2.3 modified for use with Winsteps by Mike Linacre - Thank you, David Torres Irribarra and Rebecca Freund.")
+	# message ("WrightMap 1.2.3 modified for use with Winsteps by Mike Linacre - Thank you, David Torres Irribarra and Rebecca Freund.")
 
 
 	if(is.null(thresholds))
